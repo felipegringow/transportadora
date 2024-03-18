@@ -187,7 +187,9 @@ header {
         border-radius: 7px;
         border: 1px solid black;
         height: 35px;
-
+        outline: 0;
+        box-shadow: 0;
+        color: #14153b;
     }
 
 
