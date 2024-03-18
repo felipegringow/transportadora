@@ -248,4 +248,8 @@ footer {
         flex-direction: column;
         width: 70%;
     }
+
+    .cotacao {
+        margin: 10px;
+    }
 }
