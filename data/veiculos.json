@@ -1,0 +1,18 @@
+[
+    {
+        "veiculo": "Carreta",
+        "qtd": 5
+    },
+    {
+        "veiculo": "Caminhão",
+        "qtd": 15
+    },
+    {
+        "veiculo": "Caminhonetes",
+        "qtd": 23
+    },
+    {
+        "veiculo": "Autonomos",
+        "qtd": 30
+    }
+]

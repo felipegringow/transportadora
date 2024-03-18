@@ -1,0 +1,250 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-weight: bold;
+    color: #FFF;
+
+    nav {
+        display: flex;
+        column-gap: 15px;
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
+
+.welcome {
+    background-image: url(/Transportadora-FamilyLog-main/assets/img-4.png);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.622);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        width: 35vw;
+        color: #FFF;
+        align-items: center;
+    }
+
+    .cotacao {
+        border-radius: 30px;
+        padding: 8px;
+        border: none;
+        background-color: #FFF;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    color: #14153b;
+
+    .infos-sobre {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: space-around;
+        width: 100%;
+
+        .box-info {
+            width: 110px;
+            text-align: center;
+            background-color: #365454;
+            color: #FFF;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 15px;
+
+            .material-symbols-outlined {
+                font-size: 50px;
+            }
+
+        }
+    }
+}
+
+.frota {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #365454;
+    color: #FFF;
+    padding-top: 20px;
+
+    ul {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+
+        .listaVeiculos {
+            list-style-type: none;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+
+            .veiculo {
+                background-color: #FFF;
+                color: #14153b;
+                font-weight: bold;
+                padding: 5px;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                display: inline-block;
+                min-width: 15vw;
+            }
+        }
+    }
+}
+
+.cidades-atendimento {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #14153b;
+
+    .lista-cidades {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+
+        .cidades {
+            list-style-type: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: #393939;
+            color: #FFF;
+            padding: 5px;
+            border-radius: 8px;
+            min-width: 25vw;
+        }
+    }
+}
+
+.cotacao {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: #365454;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    color: #14153b;
+
+    form {
+        margin-top: 15px;
+        display: flex;
+        column-gap: 10px;
+
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    select,
+    input {
+        padding: 3px;
+        border-radius: 5px;
+        background-color: #365454;
+        border: none;
+        color: #FFF;
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #dfdfdf;
+    }
+
+    .cotar {
+        min-width: 15vw;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: none;
+        background-color: #14153b;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    .orcamento {
+        margin-top: 10px;
+    }
+}
+
+footer {
+    background-color: #14153b;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px) {
+    .apresentacao {
+        min-width: 80vw;
+    }
+
+    .welcome {
+        height: 60vh;
+        align-items: center;
+    }
+
+    header {
+        font-size: 15px;
+    }
+
+    .listaVeiculos {
+        width: 50%;
+    }
+
+    .veiculo {
+        width: 35vw;
+    }
+
+    ul {
+        row-gap: 20px;
+    }
+
+    .cidades {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+}
